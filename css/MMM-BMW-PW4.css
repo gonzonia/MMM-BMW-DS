@@ -4,33 +4,33 @@
  * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Julee');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
-.MMM-BMW-DS .header {
+.MMM-BMW-PW .header {
   color: yellow;               /* Header color. */
 }
-.MMM-BMW-DS .image {              /* icon size */
+.MMM-BMW-PW .image {              /* icon size */
    width: 1.75%;
    height: 1.75%;
    margin-top: 0px;
    margin-bottom: -10px;
 }
 
-.MMM-BMW-DS .current {
+.MMM-BMW-PW .current {
   color: #FFFFFF;               /* text forecast color. Default is white. */
-  font-family: Julee;
+  font-family: Gloria Hallelujah;
 /*  font-size: .6em; */
 }
 
-.MMM-BMW-DS .summary {
+.MMM-BMW-PW .summary {
   color: #FFFFFF;               /* text forecast color. Default is white. */
-  font-family: Julee;
+  font-family: Gloria Hallelujah;
 /*  font-size: .6em; */
  /* display: none; */          /* uncomment to hide */
 }
 
-.MMM-BMW-DS .daily {
+.MMM-BMW-PW .daily {
   color: #FFFFFF;               /* days of the week color. Default is white. */
-  font-family: Julee;
+  font-family: Gloria Hallelujah;
 /*  font-size: .6em; */
 }

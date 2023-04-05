@@ -1,8 +1,8 @@
 /* Magic Mirror
- * Module: MMM-BMW-DS
- * 
+ * Original Module: MMM-BMW-DS
  * By Mykle1
- *
+ * Module: MMM-BMW-PW
+ * Updated to used Pirateweather by Gonzonia
  * MIT Licensed
  */
 const NodeHelper = require('node_helper');

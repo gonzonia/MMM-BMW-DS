@@ -1,5 +1,6 @@
 ## MMM-BMW-PW
 ##UPDATED VERSION OF MMM-BMW-DS by https://github.com/mykle1
+##
 ##Seriously, I just updated the module to use Pirateweather. Nothing else. 
 
 **Bugger My Weather** PirateWeather
@@ -39,7 +40,7 @@ rain.mp3, thunder.mp3 and wind.mp3 and place them in the sounds folder of this m
 
 ## Installation and requirements
 
-* `git clone https://github.com/mykle1/MMM-BMW-PW` into the `~/MagicMirror/modules` directory.
+* `git clone https://github.com/gonzonia/MMM-BMW-PW` into the `~/MagicMirror/modules` directory.
 
 * Free API key at `[https://pirateweather.net](http://pirateweather.net/)` (Required)
 

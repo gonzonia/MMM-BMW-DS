@@ -57,7 +57,7 @@ Module.register("MMM-BMW-DS", {
         this.config.lang = this.config.lang || config.language;
 
         //  Set locale.
-        this.url = "https://api.darksky.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng + "?lang=" + config.language;
+        this.url = "https://api.pirateweather.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng + "?lang=" + config.language;
         this.forecast = {};
         this.scheduleUpdate();
     },

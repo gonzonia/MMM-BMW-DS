@@ -59,6 +59,7 @@ Module.register("MMM-BMW-DS", {
         //  Set locale.
         //https://api.pirateweather.net/forecast/{api_key}/{lat_and_long_or_time}
         this.url = "https://api.pirateweather.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng 
+        Log.info("Starting module: " + this.url);
         this.forecast = {};
         this.scheduleUpdate();
     },

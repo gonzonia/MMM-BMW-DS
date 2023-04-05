@@ -53,13 +53,15 @@ Module.register("MMM-BMW-DS", {
 
     start: function() {
         Log.info("Starting module: " + this.name);
+        Log.info("URL: " + "https://api.pirateweather.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng );
         this.sendSocketNotification('CONFIG', this.config);
         this.config.lang = this.config.lang || config.language;
 
         //  Set locale.
         //https://api.pirateweather.net/forecast/{api_key}/{lat_and_long_or_time}
+           
+
         this.url = "https://api.pirateweather.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng 
-        Log.info("Starting module: " + this.url);
         this.forecast = {};
         this.scheduleUpdate();
     },

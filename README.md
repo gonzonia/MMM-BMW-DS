@@ -1,6 +1,8 @@
-## MMM-BMW-DS
+## MMM-BMW-PW
+##UPDATED VERSION OF MMM-BMW-DS by https://github.com/mykle1
+##Seriously, I just updated the module to use Pirateweather. Nothing else. 
 
-**Bugger My Weather** DarkSky
+**Bugger My Weather** PirateWeather
 
 ## Same church, different pew
 
@@ -37,20 +39,20 @@ rain.mp3, thunder.mp3 and wind.mp3 and place them in the sounds folder of this m
 
 ## Installation and requirements
 
-* `git clone https://github.com/mykle1/MMM-BMW-DS` into the `~/MagicMirror/modules` directory.
+* `git clone https://github.com/mykle1/MMM-BMW-PW` into the `~/MagicMirror/modules` directory.
 
-* Free API key at `https://www.darksky.net` (Required)
+* Free API key at `[https://pirateweather.net](http://pirateweather.net/)` (Required)
 
-* No dependencies needed! No kidding!
+* Needs request dependency installed
 
 ## Config.js entry and options
 
     {
     disabled: false,
-    module: "MMM-BMW-DS",
+    module: "MMM-BMW-PW",
     position: "bottom_bar",               // bottom_bar is best
     config: {
-        apiKey: "YOUR API KEY GOES HERE", // Free API key @ darksky.net
+        apiKey: "YOUR API KEY GOES HERE", // Free API key @ [piratweather](http://pirateweather.net/)
         tempUnits: "F",	// MUST BE CAPITAL LETTER C or F
         lat: 'YOUR LATITUDE GOES HERE', 
         lng: 'YOUR LONGITUDE GOES HERE',
@@ -63,55 +65,6 @@ rain.mp3, thunder.mp3 and wind.mp3 and place them in the sounds folder of this m
            }
     },
 	
-## Language support
-
-* The module will read the language being used in your config file and adjust accordingly
-
-* Supported languages from the API
-
-* ar: Arabic
-* az: Azerbaijani
-* be: Belarusian
-* bg: Bulgarian
-* bs: Bosnian
-* ca: Catalan
-* cs: Czech
-* da: Danish
-* de: German
-* el: Greek
-* en: English (which is the default)
-* es: Spanish
-* et: Estonian
-* fi: Finnish
-* fr: French
-* he: Hebrew
-* hr: Croatian
-* hu: Hungarian
-* id: Indonesian
-* is: Icelandic
-* it: Italian
-* ja: Japanese
-* ka: Georgian
-* ko: Korean
-* kw: Cornish
-* nb: Norwegian Bokmål
-* nl: Dutch
-* no: Norwegian Bokmål (alias for nb)
-* pl: Polish
-* pt: Portuguese
-* ro: Romanian
-* ru: Russian
-* sk: Slovak
-* sl: Slovenian
-* sr: Serbian
-* sv: Swedish
-* tet: Tetum
-* tr: Turkish
-* uk: Ukrainian
-* x-pig-latin: Igpay Atinlay
-* zh: simplified Chinese
-* zh-tw: traditional Chinese
-
 ## Thanks to "Big Salty" for suggesting a rewrite of MMM-BMW
 
 * The original MMM-BMW is still available. However, it requires an older WunderGround API key

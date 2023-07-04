@@ -44,7 +44,8 @@ rain.mp3, thunder.mp3 and wind.mp3 and place them in the sounds folder of this m
 
 * Free API key at `[https://pirateweather.net](http://pirateweather.net/)` (Required)
 
-* Run 'npm install request' from within module directory
+* Run 'npm install needle' from within module directory (if somone knows how to make it pick this up with an npm install, please let me know)
+* 
 
 ## Config.js entry and options
 

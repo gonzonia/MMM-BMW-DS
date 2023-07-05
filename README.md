@@ -64,6 +64,7 @@ rain.mp3, thunder.mp3 and wind.mp3 and place them in the sounds folder of this m
         useHeader: false,               
         header: "Your header",
         maxWidth: "100%",
+	timeFormat: "12", //12 or 24, default is 12
            }
     },
 	

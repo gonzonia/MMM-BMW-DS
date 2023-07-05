@@ -23,6 +23,7 @@ Module.register("MMM-BMW-PW", {
         initialLoadDelay: 4250,
         retryDelay: 2500,
         updateInterval: 5 * 60 * 1000,
+        timeFormat: 12,
 
         iconArray: {
             "clear-day": "clear",
@@ -37,6 +38,8 @@ Module.register("MMM-BMW-PW", {
             "fog": "fog"
         }
     },
+
+
 
     // Gets correct css file from config.js
     getStyles: function() {
@@ -58,6 +61,7 @@ Module.register("MMM-BMW-PW", {
         //Log.info("URL: " + "https://api.pirateweather.net/forecast/" + this.config.apiKey + "/" + this.config.lat + "," + this.config.lng );
         this.sendSocketNotification('CONFIG', this.config);
         this.config.lang = this.config.lang || config.language;
+       
 
         //  Set locale.
         //https://api.pirateweather.net/forecast/{api_key}/{lat_and_long_or_time}
@@ -75,10 +79,15 @@ Module.register("MMM-BMW-PW", {
         function to_celcius(t) {
             return (t - 32) * 5 / 9;
         }
+        
+       	
+		var formatTime = this.config.timeFormat; //for some reason the code below didn't like reading directly from config, so set it here
+		
+		
 
         // 12 or 24 hour time function based on config.js timeFormat //
         function getTime(gTime) {
-            if (this.config.timeFormat == "12") {
+            if (formatTime == "12") {
                 gTime = moment(forecast.time).format("h:mm a");
             } else {
                 gTime = moment(forecast.time).format("H:MM");
@@ -201,6 +210,7 @@ Module.register("MMM-BMW-PW", {
 
     processWeather: function(data) {
         this.forecast = data;
+
     //            console.log(this.forecast);
         this.loaded = true;
     },
@@ -218,8 +228,9 @@ Module.register("MMM-BMW-PW", {
 
     socketNotificationReceived: function(notification, payload) {
         if (notification === "WEATHER_RESULT") {
+//			console.log(payload);
             this.processWeather(payload);
-
+            
             this.updateDom(this.config.animationSpeed);
         }
         this.updateDom(this.config.initialLoadDelay);
